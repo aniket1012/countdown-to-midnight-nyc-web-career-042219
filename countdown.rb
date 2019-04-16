@@ -10,7 +10,11 @@ def countdown(num)
 end
 
 def countdown_with_sleep(num)
-  puts "#{num} SECOND(S)!"
+  while num > 0
+
+    puts "#{num} SECOND(S)!"
+   num -= 1
+
   sleep 1
   num -= 5
 end
